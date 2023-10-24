@@ -1,0 +1,101 @@
+/* Use @import directive to import fonts here */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(197, 206, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  margin: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  padding: 30px;
+  gap: 10px;
+  border-radius: 7px;
+  box-shadow: 8px 7px 12px 5px rgba(250,243,243,0.7);
+-webkit-box-shadow: 8px 7px 12px 5px rgba(250,243,243,0.7);
+-moz-box-shadow: 8px 7px 12px 5px rgba(250,243,243,0.7);
+}
+
+.container h1 {
+  font-size: 23px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.inputBox input {
+  padding: 10px;
+  border-radius: 4px;
+  flex-grow: 1;
+  border: 1px solid rgb(154, 173, 190);
+}
+
+.inputBox input::placeholder {
+  color: rgb(154, 173, 190);
+}
+
+.inputBox button {
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputBox button:hover {
+  opacity: 0.9;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.checkbox input {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+}
+
+.checkbox p {
+  font-size: 11px;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 15px;
+    width: 100%;
+  }
+}
